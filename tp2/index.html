@@ -1,33 +1,174 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="formulaire.js"></script>
+	<meta charset="UTF-8">
+	<title>TP2</title>
+	<style type="text/css">
+	body,input{
+		margin: 0;
+		padding: 0;
+		background: rgb(146, 144, 145);
+	}
+	input{
+		display: inline-block;
+		background: #fff;
+	}
+	.xiao-container{
+		width: 100%;
+	}
+	
+	.xiao-register-box{
+		position: relative;
+		height: 300px;
+		width: 800px;
+		top: 50px;
+		margin: 0 auto;
+		z-index: 99999;
+		background:#ffffff;
+		border: 7px solid #ccc;
+	}
+	
+	
+	
+	</style>
+<script>
+	window.onload = function(){
+		document.getElementById("form").onsubmit = function(){
+			return checkUsername() && checkPassword();
+		};
+		document.getElementById("username").onblur = checkUsername;
+		document.getElementById("password").onblur = checkPassword;
+	};
+	
+	function checkUsername(){
+		var username = document.getElementById("username").value;
+		var reg_username = /^\w{6,12}$/;
+		var flag = reg_username.test(username);
+		var s_username = document.getElementById("s_username");
+		if(flag){
+			s_username.innerHTML = "<img width='35' height='25' src='img/gou.png'/>";
+		}else{
+			s_username.innerHTML = "用户名格式有误";
+		}
+		return flag;
+	}
+	
+	function checkPassword(){
+		var password = document.getElementById("password").value;
+		var reg_password = /^\w{6,12}$/;
+		var flag = reg_password.test(password);
+		var s_password = document.getElementById("s_password");
+		if(flag){
+			s_password.innerHTML = "<img width='35' height='25' src='img/gou.png'/>";
+		}else{
+			s_password.innerHTML = "密码格式有误";
+		}
+		return flag;
+	}
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+</script>
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+</head>
+<body>
+	
+			<h1>Saisie d'une fiche "Personne"</h1>
+			<form action="#" method="post">
+				<div class="xiao-container">
+		<div class="xiao-register-box">
+			
+			<div class="xiao-title-box">	
+				<tr>
+						
+					<td class="td_left"><label for="name">Name</label></td>
+					
+					<td class="td_right"><input type="text" name="name" id="name" placeholder="mini 5 caracteres max 20 caracteres"></td><br><br>
+					
+					<span id="s_username" class="error"></span>
+				</tr>
+
+					
+				<tr>
+						
+					<td class="td_left"><label for="prenom">Prenom</label></td>
+					
+					<td class="td_right"><input type="text" name="prenom" id="prenom" placeholder="mini 5 caracteres max 20 caracteres"></td><br><br>
+					<span id="s_prenom" class="error"></span>
+				</tr>
+					
+	
+				<tr>
+						
+					<td class="td_left"><label for="date de naissance">date de naissance </label></td>
+					
+					<td class="td_right"><input type="date" name="date de naissance" id="date de naissance" placeholder="JJ/MM/AAAA"></td><br><br>
+				</tr>
+	
+				<tr>
+						
+					<td class="td_left"><label for="adress">Adress </label></td>
+					
+					<td class="td_right"><input type="text" name="adress" id="adress" placeholder="mini 5 caracteres max 20 caracteres"></td><br><br>
+				</tr>
+	
+	
+				<tr>
+						
+					<td class="td_left"><label for="mail">Mail </label></td>
+					
+					<td class="td_right"><input type="email" name="mail" id="mail" placeholder="mini 5 caracteres max 30 caracteres"></td><br><br>
+				</tr>
+	
+					
+				<tr>	
+					
+                        <td colspan="2" id="td_sub"><input type="button" id="btn_sub" value="Valiter"></td>
+                                          
+				</tr>
+
+				
+				
+				
+			</form>
+		</div>
+	</div>
+
+	
+	<div id="erreur " style="position: relative;
+	padding: 5px;
+	height: 100px;
+	width: 800px;
+	top: 100px;
+	margin: 0 auto;
+	z-index: 99999;
+	background:#f79696;
+	border: 1px solid rgb(5, 5, 5);"> 
+	il fault au mois 5 carateres
+	<h2><a href="test.html">Exemple</a></h2>	
+</div> 
+	
+		<div id="resultat" style="position: relative;
+			padding: 5px;
+			height: 100px;
+			width: 800px;
+			top: 300px;
+			margin: 0 auto;
+			z-index: 99999;
+			background:#0e5c3e;
+			border: 1px solid rgb(5, 5, 5);
+			text-decoration-color: #ffffff; ">
+			</div>
+
+
+
+
+
+		
+</div>
+
+
+
+
+
+</body>
 </html>
