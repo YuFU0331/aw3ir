@@ -3,9 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
+        <title>TP AW</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+<!-- librairie Javascript de boostrap pour pouvoir utiliser les composants interactifs (modal https://getbootstrap.com/docs/5.1/components/modal/ , collapse...) -->
+<script src="js/bootstrap.bundle.js"></script>
+
+<script src="js/form-validation.js"></script>
+
+
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
@@ -24,10 +32,55 @@
         <!--<link rel="stylesheet" href="style.css">-->
         <!--<script src="main.js"></script>-->
     </head>
-    <body>        
+    <body>  
+       
+        <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputNom" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="inputNom">
+            </div>
+            
+            <div class="col-md-6">
+                <label for="inputPrenom" class="form-label">Prenom</label>
+                <input type="text" class="form-control" id="inputPrenom">
+              </div>
+ 
+  </div>   
+<div class="datepicker dpstandard" style="opacity: 1; left: 1px; top: 325px;"><div><a class="titre_aujourdhui" href="#" title="2021/11/22 上午" aria-disabled="false">Aujourd'hui</a><div class="titre_navigation"><div style="float: left;"><a href="#myself" class="titre_navigation_mois_prec" title="Octobre" aria-disabled="false"></a><div class="titre_navigation_mois">Novembre</div><a href="#myself" class="titre_navigation_mois_suiv" title="Décembre" aria-disabled="false"></a><div class="clear"></div></div><div style="float: right;"><a href="#myself" class="titre_navigation_annee_prec" title="2020" aria-disabled="false"></a><div class="titre_navigation_annee">2021</div><a href="#myself" class="titre_navigation_annee_suiv" title="2022" aria-disabled="false"></a><div class="clear"></div></div></div></div><div class="body"><div style="position: absolute; top: 0px; left: 0px; width: 45.2em; height: 15.7em;"><div style="position: absolute; top: 0em; left: 22.6em; width: 22.6em; height: 15.7em;"></div><div style="position: absolute; top: 0em; left: 0em; width: 22.6em; height: 15.7em;"><table class="days" role="grid"><caption class="invisible">Calendrier Novembre 2021</caption><thead><tr class="titles"><th class="title day day1" scope="col">Lun.</th><th class="title day day2" scope="col">Mar.</th><th class="title day day3" scope="col">Mer.</th><th class="title day day4" scope="col">Jeu.</th><th class="title day day5" scope="col">Ven.</th><th class="title day day6" scope="col">Sam.</th><th class="title day day0" scope="col">Dim.</th></tr></thead><tbody><tr class="week week0"><td class="day day1" role="gridcell" aria-selected="false" title="01/11/2021">1</td><td class="day day2" role="gridcell" aria-selected="false" title="02/11/2021">2</td><td class="day day3" role="gridcell" aria-selected="false" title="03/11/2021">3</td><td class="day day4" role="gridcell" aria-selected="false" title="04/11/2021">4</td><td class="day day5" role="gridcell" aria-selected="false" title="05/11/2021">5</td><td class="day day6 nonouvrable" role="gridcell" aria-selected="false" title="06/11/2021">6</td><td class="day day0 nonouvrable" role="gridcell" aria-selected="false" title="07/11/2021">7</td></tr><tr class="week week1"><td class="day day1" role="gridcell" aria-selected="false" title="08/11/2021">8</td><td class="day day2" role="gridcell" aria-selected="false" title="09/11/2021">9</td><td class="day day3" role="gridcell" aria-selected="false" title="10/11/2021">10</td><td class="day day4" role="gridcell" aria-selected="false" title="11/11/2021">11</td><td class="day day5" role="gridcell" aria-selected="false" title="12/11/2021">12</td><td class="day day6 nonouvrable" role="gridcell" aria-selected="false" title="13/11/2021">13</td><td class="day day0 nonouvrable" role="gridcell" aria-selected="false" title="14/11/2021">14</td></tr><tr class="week week2"><td class="day day1" role="gridcell" aria-selected="false" title="15/11/2021">15</td><td class="day day2" role="gridcell" aria-selected="false" title="16/11/2021">16</td><td class="day day3" role="gridcell" aria-selected="false" title="17/11/2021">17</td><td class="day day4" role="gridcell" aria-selected="false" title="18/11/2021">18</td><td class="day day5" role="gridcell" aria-selected="false" title="19/11/2021">19</td><td class="day day6 nonouvrable" role="gridcell" aria-selected="false" title="20/11/2021">20</td><td class="day day0 nonouvrable" role="gridcell" aria-selected="false" title="21/11/2021">21</td></tr><tr class="week week3"><td class="day day1 today" role="gridcell" aria-selected="false" title="22/11/2021">22</td><td class="day day2" role="gridcell" aria-selected="false" title="23/11/2021">23</td><td class="day day3" role="gridcell" aria-selected="false" title="24/11/2021">24</td><td class="day day4" role="gridcell" aria-selected="false" title="25/11/2021">25</td><td class="day day5" role="gridcell" aria-selected="false" title="26/11/2021">26</td><td class="day day6 nonouvrable" role="gridcell" aria-selected="false" title="27/11/2021" tabindex="-1">27</td><td class="day day0 nonouvrable selected" role="gridcell" aria-selected="false" title="28/11/2021 courant" tabindex="-1">28</td></tr><tr class="week week4"><td class="day day1 current" role="gridcell" aria-selected="true" title="29/11/2021" tabindex="0">29</td><td class="day day2" role="gridcell" aria-selected="false" title="30/11/2021" tabindex="-1">30</td><td class="day day3 unavailable" role="gridcell" aria-selected="false" title="01/12/2021">1</td><td class="day day4 unavailable" role="gridcell" aria-selected="false" title="02/12/2021">2</td><td class="day day5 unavailable" role="gridcell" aria-selected="false" title="03/12/2021">3</td><td class="day day6 nonouvrable unavailable" role="gridcell" aria-selected="false" title="04/12/2021">4</td><td class="day day0 nonouvrable unavailable" role="gridcell" aria-selected="false" title="05/12/2021">5</td></tr><tr class="week week5"><td class="day day1 unavailable" role="gridcell" aria-selected="false" title="06/12/2021">6</td><td class="day day2 unavailable" role="gridcell" aria-selected="false" title="07/12/2021">7</td><td class="day day3 unavailable" role="gridcell" aria-selected="false" title="08/12/2021">8</td><td class="day day4 unavailable" role="gridcell" aria-selected="false" title="09/12/2021">9</td><td class="day day5 unavailable" role="gridcell" aria-selected="false" title="10/12/2021">10</td><td class="day day6 nonouvrable unavailable" role="gridcell" aria-selected="false" title="11/12/2021">11</td><td class="day day0 nonouvrable unavailable" role="gridcell" aria-selected="false" title="12/12/2021">12</td></tr></tbody></table></div></div></div></div>
+<div><a class="titre_aujourdhui" href="#" title="2021/11/22 上午" aria-disabled="false">Aujourd'hui</a><div class="titre_navigation"><div style="float: left;"><a href="#myself" class="titre_navigation_mois_prec" title="Octobre" aria-disabled="false"></a><div class="titre_navigation_mois">Novembre</div><a href="#myself" class="titre_navigation_mois_suiv" title="Décembre" aria-disabled="false"></a><div class="clear"></div></div><div style="float: right;"><a href="#myself" class="titre_navigation_annee_prec" title="2020" aria-disabled="false"></a><div class="titre_navigation_annee">2021</div><a href="#myself" class="titre_navigation_annee_suiv" title="2022" aria-disabled="false"></a><div class="clear"></div></div></div></div>
+          
+<div class="body"><div style="position: absolute; top: 0px; left: 0px; width: 45.2em; height: 15.7em;"><div style="position: absolute; top: 0em; left: 22.6em; width: 22.6em; height: 15.7em;"></div><div style="position: absolute; top: 0em; left: 0em; width: 22.6em; height: 15.7em;"><table class="days" role="grid"><caption class="invisible">Calendrier Novembre 2021</caption><thead><tr class="titles"><th class="title day day1" scope="col">Lun.</th><th class="title day day2" scope="col">Mar.</th><th class="title day day3" scope="col">Mer.</th><th class="title day day4" scope="col">Jeu.</th><th class="title day day5" scope="col">Ven.</th><th class="title day day6" scope="col">Sam.</th><th class="title day day0" scope="col">Dim.</th></tr></thead><tbody><tr class="week week0"><td class="day day1" role="gridcell" aria-selected="false" title="01/11/2021">1</td><td class="day day2" role="gridcell" aria-selected="false" title="02/11/2021">2</td><td class="day day3" role="gridcell" aria-selected="false" title="03/11/2021">3</td><td class="day day4" role="gridcell" aria-selected="false" title="04/11/2021">4</td><td class="day day5" role="gridcell" aria-selected="false" title="05/11/2021">5</td><td class="day day6 nonouvrable" role="gridcell" aria-selected="false" title="06/11/2021">6</td><td class="day day0 nonouvrable" role="gridcell" aria-selected="false" title="07/11/2021">7</td></tr><tr class="week week1"><td class="day day1" role="gridcell" aria-selected="false" title="08/11/2021">8</td><td class="day day2" role="gridcell" aria-selected="false" title="09/11/2021">9</td><td class="day day3" role="gridcell" aria-selected="false" title="10/11/2021">10</td><td class="day day4" role="gridcell" aria-selected="false" title="11/11/2021">11</td><td class="day day5" role="gridcell" aria-selected="false" title="12/11/2021">12</td><td class="day day6 nonouvrable" role="gridcell" aria-selected="false" title="13/11/2021">13</td><td class="day day0 nonouvrable" role="gridcell" aria-selected="false" title="14/11/2021">14</td></tr><tr class="week week2"><td class="day day1" role="gridcell" aria-selected="false" title="15/11/2021">15</td><td class="day day2" role="gridcell" aria-selected="false" title="16/11/2021">16</td><td class="day day3" role="gridcell" aria-selected="false" title="17/11/2021">17</td><td class="day day4" role="gridcell" aria-selected="false" title="18/11/2021">18</td><td class="day day5" role="gridcell" aria-selected="false" title="19/11/2021">19</td><td class="day day6 nonouvrable" role="gridcell" aria-selected="false" title="20/11/2021">20</td><td class="day day0 nonouvrable" role="gridcell" aria-selected="false" title="21/11/2021">21</td></tr><tr class="week week3"><td class="day day1 today" role="gridcell" aria-selected="false" title="22/11/2021">22</td><td class="day day2" role="gridcell" aria-selected="false" title="23/11/2021">23</td><td class="day day3" role="gridcell" aria-selected="false" title="24/11/2021">24</td><td class="day day4" role="gridcell" aria-selected="false" title="25/11/2021">25</td><td class="day day5" role="gridcell" aria-selected="false" title="26/11/2021">26</td><td class="day day6 nonouvrable" role="gridcell" aria-selected="false" title="27/11/2021">27</td><td class="day day0 nonouvrable selected" role="gridcell" aria-selected="false" title="28/11/2021 courant">28</td></tr><tr class="week week4"><td class="day day1" role="gridcell" aria-selected="false" title="29/11/2021">29</td><td class="day day2" role="gridcell" aria-selected="false" title="30/11/2021">30</td><td class="day day3 unavailable" role="gridcell" aria-selected="false" title="01/12/2021">1</td><td class="day day4 unavailable" role="gridcell" aria-selected="false" title="02/12/2021">2</td><td class="day day5 unavailable" role="gridcell" aria-selected="false" title="03/12/2021">3</td><td class="day day6 nonouvrable unavailable" role="gridcell" aria-selected="false" title="04/12/2021">4</td><td class="day day0 nonouvrable unavailable" role="gridcell" aria-selected="false" title="05/12/2021">5</td></tr><tr class="week week5"><td class="day day1 unavailable" role="gridcell" aria-selected="false" title="06/12/2021">6</td><td class="day day2 unavailable" role="gridcell" aria-selected="false" title="07/12/2021">7</td><td class="day day3 unavailable" role="gridcell" aria-selected="false" title="08/12/2021">8</td><td class="day day4 unavailable" role="gridcell" aria-selected="false" title="09/12/2021">9</td><td class="day day5 unavailable" role="gridcell" aria-selected="false" title="10/12/2021">10</td><td class="day day6 nonouvrable unavailable" role="gridcell" aria-selected="false" title="11/12/2021">11</td><td class="day day0 nonouvrable unavailable" role="gridcell" aria-selected="false" title="12/12/2021">12</td></tr></tbody></table></div></div></div>
+
+</dive>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+
+
+
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+
+            
+            
+          </form>
+
+         
+         
+
+
+
+
+
+
         <h1>tp3</h1>
         <!-- Add your site or application content here -->
         <p>Hello world! This is HTML5 Boilerplate.</p>
         <img src="../galilee.png" alt="Logo Galilee"/>
+        <button type="button" class="btn btn-primary btn-sm">Valider</button>
+
     </body>
 </html>
