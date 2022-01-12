@@ -147,17 +147,17 @@
     
      <script>
                 document.getElementById("btn_add").onclick = function() {
-                    // 获取文本框的内容
+                  
                     var firstname = document.getElementById("firstname").value;
                     var name = document.getElementById("name").value;
                     var adresse = document.getElementById("adresse").value;
                     var birth = document.getElementById("birth").value;
                     var mail = document.getElementById("mail").value;
                 
-                    // 获取table
+                    
                     var table = document.getElementsByTagName("table")[0];
                 
-                    // 追加一行
+                   
                     table.innerHTML += "<tr>\n" +
                         "        <td>"+name+"</td>\n" +
                         "        <td>"+firstname+"</td>\n" +
