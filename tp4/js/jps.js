@@ -1,6 +1,4 @@
-function addScript(url){
-    document.write("<script language=javascript src="+url+"></script>");
-}
+
 
 
 // demande de la localisation à l'utilisateur
