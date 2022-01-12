@@ -1,15 +1,14 @@
 for (var index in contactList) {
-    console.log(contactList[index].name);
-  }
+  console.log(contactList[index].name);
+}
 
-  document.querySelector("table tbody").innerHTML =
+document.querySelector("table tbody").innerHTML =
   document.querySelector("table tbody").innerHTML +
   "<tr><td>" +
   nom +
   "</td><td>" +
   prenom +
   "</td><td>";
-// CO
 /*
 store.js
 Script pour gérer la liste de contact en JSON
