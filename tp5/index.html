@@ -47,11 +47,11 @@
             {{formCityName.length}} car.
             </small>
 
+            <div class="alert alert-danger" role="alert" v-if='messageForm != ""'>
+                {{this.messageForm="existe"}}
+            </div>   
             
             
-            <div class="alert alert-danger" role="alert" >
-              existe deja
-              </div>
              </form>
 
                 <h4>Liste des villes ({{cityList.length}})</h4>
@@ -120,10 +120,7 @@
             <img alt="map" width="300" src="https://maps.googleapis.com/maps/api/staticmap?markers='+LATITTUDE+','+LONGITUDE+'&zoom=5&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg">
         </div>
         
-        <script id="__bs_script__">//<![CDATA[
-            document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.7'><\/script>".replace("HOST", location.hostname));
-        //]]></script>
-         
+        
         
 
 
