@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({ providedIn: 'root' })
+@Injectable({providedIn: 'root'})
 export class MeteoService {
 
   constructor() { }
-
 
   getMeteo(name: string): Promise<any> {
     console.log('from service', name);
@@ -29,4 +28,5 @@ export class MeteoService {
       });
 
   }
+
 }
