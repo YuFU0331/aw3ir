@@ -11,14 +11,14 @@ import { DatePipe } from '@angular/common';
   styleUrls: ['./meteo-detail.component.css']
 })
 export class MeteoDetailComponent implements OnInit {
-
-  meteo : any;
-
-  constructor(
+meteo : any;
+  constructor( 
     private route: ActivatedRoute,
     private meteoService: MeteoService,
     private location: Location
-  ) {}
+
+
+  ) { }
 
   ngOnInit() {
     this.getMeteo();
@@ -37,5 +37,5 @@ export class MeteoDetailComponent implements OnInit {
       .catch(fail => this.meteo = fail);
     }
   }
- 
+  
 }
