@@ -7,13 +7,11 @@ import { MeteoItem } from '../meteoItem';
   styleUrls: ['./meteo.component.css']
 })
 export class MeteoComponent implements OnInit {
-
   city: MeteoItem = {
     name: '',
     id: 0,
     weather: null
   };
-
   cityList: MeteoItem[] = [];
 
   constructor() { }
@@ -45,7 +43,6 @@ export class MeteoComponent implements OnInit {
     }
 
   }
-
   remove(_city: any) {
     // on utilise 'filter' pour retourne une liste avec tous les items ayant un nom différent de _city.name
     this.cityList = this.cityList.filter(item =>
@@ -54,7 +51,7 @@ export class MeteoComponent implements OnInit {
     this.saveCityList();
   }
 
-  isCityExist(_cityName) {
+  isCityExist(_cityName:any) {
 
     // la méthode 'filter' retourne une liste contenant tous les items ayant un nom égale à _cityName
     // doc. sur filter : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter
@@ -70,5 +67,6 @@ export class MeteoComponent implements OnInit {
   saveCityList(){
     localStorage['cityList'] = JSON.stringify(this.cityList);
   }
+
 
 }
