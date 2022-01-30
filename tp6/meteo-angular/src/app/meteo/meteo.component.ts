@@ -1,17 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { MeteoItem } from '../meteoItem';
-
 @Component({
   selector: 'app-meteo',
   templateUrl: './meteo.component.html',
   styleUrls: ['./meteo.component.css']
 })
 export class MeteoComponent implements OnInit {
+
+ 
   city: MeteoItem = {
     name: '',
     id: 0,
     weather: null
   };
+
   cityList: MeteoItem[] = [];
 
   constructor() { }
@@ -43,6 +45,7 @@ export class MeteoComponent implements OnInit {
     }
 
   }
+
   remove(_city: any) {
     // on utilise 'filter' pour retourne une liste avec tous les items ayant un nom différent de _city.name
     this.cityList = this.cityList.filter(item =>
@@ -68,5 +71,5 @@ export class MeteoComponent implements OnInit {
     localStorage['cityList'] = JSON.stringify(this.cityList);
   }
 
-
+  
 }
