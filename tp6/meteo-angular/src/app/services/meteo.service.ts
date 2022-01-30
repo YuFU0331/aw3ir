@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({providedIn: 'root'})
+@Injectable({
+  providedIn: 'root'
+})
 export class MeteoService {
 
   constructor() { }
@@ -8,7 +10,7 @@ export class MeteoService {
   getMeteo(name: string): Promise<any> {
     console.log('from service', name);
 
-    return fetch('https://api.openweathermap.org/data/2.5/weather/?q=' + name + '&units=metric&lang=fr&appid=713432e99d53ab6a94a3ad0efa1bce03')
+    return fetch('https://api.openweathermap.org/data/2.5/weather/?q=' + name + '&units=metric&lang=fr&appid=VOTRE_CLE_OPENWEATHERMAP')
       .then(function (response) {
         return response.json();
       })
